@@ -1,0 +1,62 @@
+.container-portfolio {
+
+    display: flex;
+
+    margin: auto;
+    margin-top: 60px;
+
+    width: 1015px;
+}
+
+#imagem-portfolio {
+
+    width: 540px;
+    height: 500px;
+}
+
+p {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.texto-portfolio {
+
+    border-bottom: 1px solid #33323d66;
+    text-align: left;
+    margin: auto;
+    width: 430px;
+    height: 360px;
+}
+
+h1 {
+
+    font-family: 'Ibarra Real Nova';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.3571428656578064px;
+    text-align: left;
+
+}
+
+.texto-portfolio button {
+
+    display: block;
+
+    margin-left: 0px;
+
+    width: 175px;
+    height: 48px;
+
+    font-family: 'Public Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+
+}

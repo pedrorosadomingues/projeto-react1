@@ -1,0 +1,86 @@
+#home-card1 {
+  display: flex;
+  align-items: flex-end;
+
+  background-image: url('../../assets/home/image-homepage-hero-edit.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding-top: 150px;
+
+  height: 600px;
+  width: 100%;
+}
+
+#container-texto-card1 {
+  background-color: white;
+
+  padding-left: 45px;
+  padding-right: 28px;
+  margin-bottom: 75px;
+
+  width: 445px;
+  height: 357px;
+}
+
+#texto-grande {
+  padding-left: 56px;
+}
+
+#container-botao-card1:hover {
+  cursor: pointer;
+}
+
+#container-botao-card1 {
+  background-color: #203A4C;
+
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 50px;
+
+  width: 200px;
+  height: 48px;
+
+  margin-left: 23px;
+  padding-left: 15px;
+  border: none;
+}
+
+#down-arrows {
+  background-color: #203A4C;
+
+  border: none;
+  margin-bottom: 2px;
+
+  height: 12px;
+}
+
+#home-card2 {
+  display: flex;
+
+  margin-top: 149px;
+  margin-left: -80px;
+  padding-left: 165px;
+}
+
+#image-profile {
+  width: 540px;
+  height: 600px;
+}
+
+#container-sobre-mim {
+  margin-left: 140px;
+  width: 430px;
+  height: 360px;
+}
+
+#botao2 {
+  display: block;
+
+  margin: auto;
+  margin-top: 30px;
+
+  width: 204px;
+  height: 48px;
+}

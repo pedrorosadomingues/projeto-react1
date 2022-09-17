@@ -1,0 +1,55 @@
+#home-card3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: auto;
+  margin-top: 115px;
+
+  width: 1110px;
+}
+
+#titulo-card3 {
+  width: 500px;
+}
+
+#botao3 {
+  width: 168px;
+  height: 48px;
+}
+
+#footer-home {
+  margin: auto;
+  margin-top: 80px;
+  padding-top: 38px;
+
+  width: 1255px;
+  height: 60px;
+  background-color: #33323D;
+}
+
+#container-footer-home {
+  display: flex;
+  align-items: center;
+}
+
+#triangulos-branco {
+  padding-left: 80px;
+}
+
+#footer-home button {
+  background-color: #33323D;
+
+  margin-left: 42px;
+  border: none;
+
+}
+
+#github-light {
+  margin-left: 590px;
+  margin-right: 20px;
+}
+
+#twitter-light {
+  margin-right: 20px;
+}

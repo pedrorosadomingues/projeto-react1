@@ -1,0 +1,45 @@
+#main-container-manage {
+    margin: auto;
+    margin-top: 60px;
+    width: 1110px
+}
+
+#container-textos {
+
+    margin-top: 115px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#image-one-manage {
+    width: 1110px;
+    height: 500px;
+}
+
+#container1-manage {
+
+    border-bottom: 1px solid #33323d66;
+    border-top: 1px solid #33323d66;
+    
+    margin-top: 48px;
+
+    width: 350px;
+    height: 400px;
+}
+
+#container2-manage {
+    width: 635px;
+
+}
+
+#image-two-manage {
+    width: 635px;
+    height: 400px;
+}
+
+#image-three-manage {
+    width: 635px;
+    height: 400px;
+}

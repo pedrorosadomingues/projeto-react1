@@ -1,0 +1,33 @@
+#container-passador {
+    display: flex;
+
+    margin: auto;
+    margin-top: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    justify-content: space-between;
+    width: 1110px;
+
+    border-bottom: 1px solid #33323d66;
+    border-top: 1px solid #33323d66;
+}
+
+#container-passador {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-passador-display {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background-color: white;
+
+    border: none;
+}
+
+.btn-passador-display p {
+    margin: 0 0;
+}

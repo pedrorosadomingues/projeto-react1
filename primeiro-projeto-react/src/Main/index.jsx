@@ -1,39 +1,69 @@
 import './style.css';
+import './fontes.css';
+import { useState, useContext } from 'react';
+import UserContext from '../Context/UserContext';
 
-import Header from '../Header/index.jsx';
-import Home from '../Home/index.jsx';
-import Portfolio from '../Portfolio/index.jsx';
-import Contato from '../Contato/index.jsx';
-import Footer from '../Footer/index.jsx';
-import { useState } from 'react';
+import Header from '../Components/Header/index.jsx';
+import Footer from '../Components/Footer/index.jsx';
+
+import Home from '../Pages/Home/index.jsx';
+import Portfolio from '../Pages/Portfolio/index.jsx';
+import Contato from '../Pages/Contato/index.jsx';
+
+import Manage from '../Pages/Projects/Manage/index.jsx';
+import Bookmark from '../Pages/Projects/Bookmark/index.jsx';
+import Insure from '../Pages/Projects/Insure/index.jsx';
+import Fylo from '../Pages/Projects/Fylo/index.jsx';
 
 function Main() {
-  const [page, setPage] = useState('home');
+
+
+  const [pageState, setPageState] = useState('home');
+  const [projectState, setProjectState] = useState(null);
+
+
+  function handleProjectState(project) {
+    setProjectState(project);
+
+  }
 
   function handlePageState(pagina) {
-    setPage(pagina);
+    setPageState(pagina);
+    setProjectState(null);
   }
 
   return (
+    <UserContext.Provider value={{ pageState, handlePageState, projectState, handleProjectState }}>
     <div>
       <Header
         handlePageState={handlePageState}
-        page={page}
+        pageState={pageState}
       />
 
-      {page === 'home' && < Home
+      {pageState === 'home' && < Home
         handlePageState={handlePageState}
       />}
-      {page === 'portfolio' && <Portfolio
+      {pageState === 'portfolio' && projectState === null && <Portfolio
+        handleProjectState={handleProjectState}
       />}
-      {page === 'contato' && <Contato
+      {pageState === 'contato' && <Contato
+      />}
+      {projectState === 'Manage' && <Manage
+      />}
+      {projectState === 'Bookmark' && <Bookmark
+      />}
+      {projectState === 'Insure' && <Insure
+      />}
+      {projectState === 'Fylo' && <Fylo
       />}
 
       <Footer
         handlePageState={handlePageState}
-        page={page}
+        pageState={pageState}
+        projectState={projectState}
       />
     </div>
+    </UserContext.Provider>
   );
 }
 

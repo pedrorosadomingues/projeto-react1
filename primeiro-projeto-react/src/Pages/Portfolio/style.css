@@ -1,0 +1,32 @@
+.container-portfolio {
+    display: flex;
+
+    margin: auto;
+    margin-top: 60px;
+    
+
+    width: 1015px;
+}
+
+#imagem-portfolio {
+    width: 540px;
+    height: 500px;
+}
+
+.texto-portfolio {
+    border-bottom: 1px solid #33323d66;
+    text-align: left;
+    margin: auto;
+    width: 430px;
+    height: 360px;
+}
+
+.texto-portfolio button {
+    display: block;
+
+    margin-left: 0px;
+
+    width: 175px;
+    height: 48px;
+}
+

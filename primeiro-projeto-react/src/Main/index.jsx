@@ -27,7 +27,6 @@ function Main() {
   function handleProjectState(project) {
     setProjectState(project);
     scrollToTop();
-
   }
   function handlePageState(pagina) {
     setPageState(pagina);

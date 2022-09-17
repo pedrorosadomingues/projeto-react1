@@ -1,6 +1,6 @@
 import './style.css';
 import './fontes.css';
-import {useState} from 'react';
+import { useState } from 'react';
 import UserContext from '../Context/UserContext';
 
 import Header from '../Components/Header/index.jsx';
@@ -16,8 +16,6 @@ import Insure from '../Pages/Projects/Insure/index.jsx';
 import Fylo from '../Pages/Projects/Fylo/index.jsx';
 
 function Main() {
-
-
   const [pageState, setPageState] = useState('home');
   const [projectState, setProjectState] = useState(null);
 

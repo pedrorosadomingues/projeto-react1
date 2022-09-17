@@ -1,6 +1,6 @@
 import './style.css';
 import './fontes.css';
-import { useState, useContext } from 'react';
+import {useState} from 'react';
 import UserContext from '../Context/UserContext';
 
 import Header from '../Components/Header/index.jsx';

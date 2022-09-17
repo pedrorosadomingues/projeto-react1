@@ -21,48 +21,54 @@ function Main() {
   const [pageState, setPageState] = useState('home');
   const [projectState, setProjectState] = useState(null);
 
-
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+    });
+  }
   function handleProjectState(project) {
     setProjectState(project);
+    scrollToTop();
 
   }
-
   function handlePageState(pagina) {
     setPageState(pagina);
     setProjectState(null);
+    scrollToTop();
   }
 
   return (
     <UserContext.Provider value={{ pageState, handlePageState, projectState, handleProjectState }}>
-    <div>
-      <Header
-        handlePageState={handlePageState}
-        pageState={pageState}
-      />
+      <div>
+        <Header
+          handlePageState={handlePageState}
+          pageState={pageState}
+        />
 
-      {pageState === 'home' && < Home
-        handlePageState={handlePageState}
-      />}
-      {pageState === 'portfolio' && projectState === null && <Portfolio
-        handleProjectState={handleProjectState}
-      />}
-      {pageState === 'contato' && <Contato
-      />}
-      {projectState === 'Manage' && <Manage
-      />}
-      {projectState === 'Bookmark' && <Bookmark
-      />}
-      {projectState === 'Insure' && <Insure
-      />}
-      {projectState === 'Fylo' && <Fylo
-      />}
+        {pageState === 'home' && < Home
+          handlePageState={handlePageState}
+        />}
+        {pageState === 'portfolio' && projectState === null && <Portfolio
+          handleProjectState={handleProjectState}
+        />}
+        {pageState === 'contato' && <Contato
+        />}
 
-      <Footer
-        handlePageState={handlePageState}
-        pageState={pageState}
-        projectState={projectState}
-      />
-    </div>
+        {projectState === 'Manage' && <Manage
+        />}
+        {projectState === 'Bookmark' && <Bookmark
+        />}
+        {projectState === 'Insure' && <Insure
+        />}
+        {projectState === 'Fylo' && <Fylo
+        />}
+
+        <Footer
+          handlePageState={handlePageState}
+          pageState={pageState}
+          projectState={projectState}
+        />
+      </div>
     </UserContext.Provider>
   );
 }

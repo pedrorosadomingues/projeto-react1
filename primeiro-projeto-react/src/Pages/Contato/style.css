@@ -1,9 +1,9 @@
 #texto-contato {
-    border-top: 1px solid rgba(0, 0, 0, 0.329);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+    border-top: 1px solid #33323d3a;
+    border-bottom: 1px solid #33323d3a;
     width: 1110px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 75px;
     padding-top: 30px;
     padding-bottom: 30px;
 

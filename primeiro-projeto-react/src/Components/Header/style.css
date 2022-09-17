@@ -3,11 +3,6 @@ header {
   display: flex;
   justify-content: center;
   gap: 850px;
-  
-  margin-bottom: -164px;
-  padding-top: 64px;
- 
-  height: 150px;
 }
 
 header button {
@@ -22,4 +17,3 @@ button:hover {
 #icone-triangulos {
   height: 32px;
 }
-

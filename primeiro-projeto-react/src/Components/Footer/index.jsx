@@ -11,9 +11,9 @@ function Footer({ pageState, handlePageState, projectState }) {
   return (
     <div>
 
-      {projectState !== null && 
-      <Passador
-      />}
+      {projectState !== null &&
+        <Passador
+        />}
 
       {pageState !== 'contato' &&
         <div id="home-card3">

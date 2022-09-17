@@ -5,16 +5,14 @@ import downArrows from '../../assets/icons/down-arrows.svg'
 import imageProfile from '../../assets/home/image-homepage-profile.jpg'
 
 
-function Home({handlePageState }) {
+function Home({ handlePageState }) {
     return (
         <div>
             <div id="body">
-
-
                 <div id="home-card1">
 
                     <div id="container-texto-card1">
-                        <p id="texto-grande" className='ibarraReal700 height50 size50 '> Olá, me chamo Pedro Rosa e eu amo construir websites lindos</p>
+                        <p id="texto-grande" className='ibarraReal700 height50 size50 '> Olá, me chamo Alex Spencer e eu amo construir websites lindos</p>
 
                         <a href="#home-card2">
                             <button id="container-botao-card1">
